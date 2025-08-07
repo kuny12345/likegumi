@@ -27,88 +27,10 @@ body {
 
 /* 스크린 리더 전용 텍스트 클래스 */
 .sound_only {
-  display: inline-block !important;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 0;
-  margin: 0 !important;
-  padding: 0 !important;
-  font-size: 0;
-  line-height: 0;
-  border: 0 !important;
-  overflow: hidden !important;
+  @apply inline-block absolute top-0 left-0 w-0 h-0 m-0 p-0 text-[0px] leading-[0px] border-0 overflow-hidden;
 }
 
 /* 헤더 h1 요소 숨김 스타일 */
 #hd_h1 {
-  position: absolute;
-  font-size: 0;
-  line-height: 0;
-  overflow: hidden;
-}
-
-/* 헤더 래퍼 스타일 */
-#hd_wrapper {
-  position: relative;
-  margin: 0 auto;
-  zoom: 1;
-}
-
-/* 헤더 로그인 영역 스타일 */
-.hd_login {
-  z-index: 1;
-  display: flex;
-  gap: 15px;
-  right: auto !important;
-  left: 13%;
-}
-
-/* 슬라이드 갤러리 스타일 */
-.slide-container {
-  position: relative;
-  width: 100%;
-  height: 400px;
-  overflow: hidden;
-}
-
-.slide-wrapper {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-  width: 500%; /* 5장의 이미지 */
-}
-
-.slide-item {
-  width: 20%; /* 5장 중 1장의 너비 */
-  height: 400px;
-  flex-shrink: 0;
-}
-
-.slide-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.slide-dots {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 10px;
-}
-
-.slide-dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.5);
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.slide-dot.active {
-  background: white;
+  @apply absolute text-[0px] leading-[0px] overflow-hidden;
 }
