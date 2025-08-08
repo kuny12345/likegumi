@@ -18,6 +18,11 @@ export const metadata: Metadata = {
   },
 };
 
+// 전역 SSG + ISR(예: 24시간) 설정
+export const revalidate = 86400; // seconds
+// 동적 렌더링을 강제 비활성화하여 정적 생성 고정
+export const dynamic = 'force-static';
+
 export default function RootLayout({
   children,
 }: Readonly<{
