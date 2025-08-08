@@ -5,6 +5,7 @@ import Header from './components/Header';
 import MainVideo from './components/MainVideo';
 import MainSection from './components/MainSection';
 import MedicationSection from './components/MedicationSection';
+import Carousel from './components/Carousel';
 
 /**
  * 홈페이지 메인 컴포넌트
@@ -23,7 +24,9 @@ export default function Home() {
       {/* 메뉴 래퍼 */}
       <div className="pmenu_wrapper"></div>
       <hr/>
-      
+
+
+      <Carousel/>
       {/* 메인 비디오 */}
       <MainVideo />
       
@@ -31,7 +34,7 @@ export default function Home() {
       <MainSection />
       
       {/* 의식하진정 사용약물 섹션 */}
-      <MedicationSection />
+      {/* <MedicationSection /> */}
     </div>
   );
 } 

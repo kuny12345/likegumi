@@ -1,6 +1,14 @@
 import type { Metadata } from "next";
+import { Black_Han_Sans, Do_Hyeon } from "next/font/google";
 
 import "./globals.css";
+
+// Black Han Sans 폰트 설정
+const blackHanSans = Do_Hyeon({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: "홈페이지제작 더뷰미디어",
@@ -16,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko">
+    <html lang="ko" className={blackHanSans.className}>
       <body>
         {children}
       </body>
