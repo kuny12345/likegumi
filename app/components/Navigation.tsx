@@ -51,7 +51,7 @@ export default function Navigation() {
             <span>SEO/기능</span>
           </li>
 
-          {/* 기본 메뉴들 - 서브메뉴가 없는 메뉴들 */}
+          {/* 기본 메뉴들 - 서브메뉴가 없는 메뉴들
           <li 
             className="px-6 py-4 hover:bg-gray-50"
             onMouseEnter={() => handleMouseEnter('')}
@@ -69,7 +69,7 @@ export default function Navigation() {
             onMouseEnter={() => handleMouseEnter('')}
           >
             <Link href="/contact">상담문의</Link>
-          </li>
+          </li> */}
         </ul>
       </div>
 
